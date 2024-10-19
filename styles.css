@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+
+.used {
+    display: inline-block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: lightskyblue;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(211, 211, 211, 0.815);
+    margin-left: 0;
+    scale: 125%;
+    margin: 0;
+}
+
+
+.trav {
+    display: inline-block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: lightskyblue;
+    background-color: rgba(211, 211, 211, 0.477);
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.trav:hover {
+    scale: 125%;
+    background-color: rgba(211, 211, 211, 0.815);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+div {
+    padding-top: 7.5px;
+    display: block;
+    text-align: center;
+    scale: 150%;
+    background-color: rgba(211, 211, 211, 0.66);
+    top: 0;
+    position: sticky;
+}
+
+h1 {
+    background-image: url('battle.png');
+    opacity: 0.85;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    text-align: center;
+    font-family: 'Beau Rivage';
+    font-size: 75px;
+    padding: 50px;
+}
+
+.desc {
+    font-family: 'Afacad';
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.315);
+    padding: 15px;
+}
+
+p {
+    font-family: 'Afacad';
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: 'Afacad';
+    text-decoration: overline;
+    text-decoration-style: solid;
+    font-weight: bolder;
+}
+
+.large {
+    margin-left: 160px;
+    border-radius: 30px;
+}
+
+.small {
+    display: inline-block;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+
+a {
+    color: blue;
+    background-color: lightgrey;
+    border-radius: 3px;
+}
+
+.download {
+    color: white;
+    text-decoration: none;
+    background-color: #00b05c;
+    align-content: center;
+    text-align: center;
+    border-radius: 9px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-right: auto;
+    margin-left: auto;
+}
