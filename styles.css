@@ -17,6 +17,7 @@
 
 
 .trav {
+    cursor: pointer;
     display: inline-block;
     border-top: none;
     border-right: none;
