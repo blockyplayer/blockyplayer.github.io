@@ -109,6 +109,5 @@ a {
     border-radius: 9px;
     padding-top: 17px;
     padding-bottom: 17px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 75px;
 }
