@@ -84,13 +84,13 @@ h2, h3, h4, h5, h6 {
 }
 
 .large {
-    margin-left: 160px;
+    align-items: center;
     border-radius: 30px;
 }
 
 .small {
+    align-items: center;
     display: inline-block;
-    margin-left: 60px;
     border-radius: 10px;
 }
 
