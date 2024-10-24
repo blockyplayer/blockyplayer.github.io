@@ -86,12 +86,14 @@ h2, h3, h4, h5, h6 {
 .large {
     align-items: center;
     border-radius: 30px;
+    size: 50%;
 }
 
 .small {
     align-items: center;
     display: inline-block;
     border-radius: 10px;
+    size: 33%;
 }
 
 a {
