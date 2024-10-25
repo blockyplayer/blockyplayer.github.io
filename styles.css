@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
 
+.trav {
+    cursor: pointer;
+    display: inline-block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: lightskyblue;
+    background-color: rgba(211, 211, 211, 0.477);
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
 .trav::after {
     display: inline-block;
     border-top: none;
@@ -16,17 +28,7 @@
 }
 
 
-.trav {
-    cursor: pointer;
-    display: inline-block;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom-color: lightskyblue;
-    background-color: rgba(211, 211, 211, 0.477);
-    margin-left: -2px;
-    margin-right: -2px;
-}
+
 
 .trav:hover {
     scale: 125%;
