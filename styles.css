@@ -113,3 +113,10 @@ a {
     padding-bottom: 17px;
     width: 133px;
 }
+
+.attribution {
+    bottom: 0;
+    color: lightsteelblue;
+    margin: 7px;
+
+}
