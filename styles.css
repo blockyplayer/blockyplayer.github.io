@@ -116,6 +116,8 @@ a {
 
 .attribution {
     bottom: 0 !important;
+    position: absolute !important;
     color: lightsteelblue !important;
+    background-color: none !important;
     margin: 250px !important;
 }
