@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
 
-.used {
+.trav::after {
     display: inline-block;
     border-top: none;
     border-right: none;
@@ -36,6 +36,7 @@
 }
 
 div {
+    z-index:9999 !important;
     padding-top: 7.5px;
     display: block;
     text-align: center;
