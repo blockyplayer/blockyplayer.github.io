@@ -115,8 +115,7 @@ a {
 }
 
 .attribution {
-    bottom: 0;
-    color: lightsteelblue;
-    margin: 7px;
-
+    bottom: 0 !important;
+    color: lightsteelblue !important;
+    margin: 250px !important;
 }
