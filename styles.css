@@ -13,7 +13,7 @@
     margin-right: -2px;
 }
 
-.trav::after {
+.used {
     display: inline-block;
     border-top: none;
     border-right: none;
