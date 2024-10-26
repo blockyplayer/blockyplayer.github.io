@@ -116,11 +116,3 @@ a {
     padding-bottom: 17px;
     width: 133px;
 }
-
-.attribution {
-    bottom: 0 !important;
-    position: static !important;
-    color: lightsteelblue !important;
-    background-color: white !important;
-    text-align: center !important;
-}
