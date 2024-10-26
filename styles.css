@@ -121,6 +121,7 @@ a {
     bottom: 0 !important;
     position: static !important;
     color: lightsteelblue !important;
-    background-color: none !important;
+    background-color: white !important;
     margin: 250px !important;
+    text-align: center !important;
 }
