@@ -113,3 +113,9 @@ a {
     padding-bottom: 17px;
     width: 133px;
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
