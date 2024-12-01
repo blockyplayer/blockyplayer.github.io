@@ -16,10 +16,23 @@
     <body>
         <h1>Formula downloads</h1>
         <center>
-            <a class="download" href="downloads/physics.zip"><b>Download Latest</b> (V.1.0.0)</a>
+            <a class="download" href="physics1.zip" download>Download!</a><b>Download Latest</b> (V.1.0.0)</a>
             <br>
             <br>
-            <a>older versions</a>
+            <SCRIPT>
+                function toggle() {
+                    var x = document.getElementById('older');
+                    if (x.style.display == 'none') {
+                        x.style.display = 'block';
+                    } else {
+                        x.style.display = 'none';
+                    }
+                }
+                </SCRIPT>
+            <button onclick="toggle()">older versions</button>
+            <div id="older" display="none">
+                <a></a>
+            </div>
         </center>
     </body>
 </html>
