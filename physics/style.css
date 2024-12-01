@@ -16,7 +16,10 @@ div {
     text-align: top;
     scale: 150%;
     background-color: rgba(211, 211, 211, 0.66);
-
+    align-self: center;
+    align-content: center;
+    align-tracks: center;
+    align-items: center;
 }
 
 .trav {
