@@ -6,3 +6,18 @@
     padding: 10px;
     margin: 7px;
 }
+
+div {
+    z-index:9999 !important;
+    padding-top: 7.5px;
+    display: block;
+    text-align: center;
+    scale: 150%;
+    background-color: rgba(211, 211, 211, 0.66);
+    left: 0;
+    position: sticky;
+}
+
+.trav {
+    color:
+}
