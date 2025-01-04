@@ -13,7 +13,7 @@ div {
     position: sticky;
     padding-top: 7.5px;
     display: block;
-    text-align: top;
+    text-align: center;
     scale: 150%;
     background-color: rgba(211, 211, 211, 0.66);
     align-self: center;
@@ -53,4 +53,9 @@ div {
     background-color: rgba(211, 211, 211, 0.815);
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+}
+
+#older {
+    display: none;
+    
 }
