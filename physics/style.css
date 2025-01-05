@@ -5,9 +5,10 @@
     text-align: center;
     padding: 10px;
     margin: 15px;
+    letter-spacing: 2.5px;
 }
 
-div {
+div.bar {
     z-index:9999 !important;
     top: 0;
     position: sticky;
@@ -57,5 +58,16 @@ div {
 
 #older {
     display: none;
-    
+    background-color: wheat;
+    line-height: 33px;
+}
+
+li {
+    cursor: pointer;
+    border-color: darkgoldenrod;
+    list-style-type: disc;
+    list-style-position: inside;
+    border-bottom: 5px;
+    border-bottom-style: double;
+    border-bottom-color: darkgoldenrod;
 }

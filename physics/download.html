@@ -6,9 +6,10 @@
         <title>Physics Formulae</title>
         <!-- Load external CSS styles -->
         <link rel="preconnect stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/73e14643a5.js" crossorigin="anonymous"></script>
         <link rel="icon" href="images/icon.ico">
     </head>
-    <center><div>
+    <center><div class="bar">
         <button class="trav" onclick="document.location='index.html'">Home</button>
         <button class="used">Download</button>
         <button class="trav" onclick="document.location='crumble_zone.html'">Crumble zones</button>
@@ -28,13 +29,17 @@
                         x.style.display = 'none';
                     }
                 }
-                </SCRIPT>
-            <button onclick="toggle()">download older versions</button>
+            </SCRIPT>
+            <button style="cursor: pointer;" onclick="toggle()">download older versions</button>
             <div id="older">
-                <ol aria-sort="descending"></ol>
+                <br>
+                <center>
+                    <ol aria-sort="descending" z-index="99999">
                     <li onclick="document.location='index.html'">V.2.0</li>
                     <li>V.1.1</li>
-                    <li>V.1.0</li>
+                    <li>V.1.0</li> 
+                    </ol>  
+                </center>      
             </div>
         </center>
     </body>
