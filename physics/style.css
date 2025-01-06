@@ -91,6 +91,13 @@ li {
     opacity: 50%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-width: 0 0 3px 0;
+    border-width: 0 0 5px 0;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    position: relative;
+    bottom: 5px;
+    border: none;
 }
