@@ -6,7 +6,7 @@
         <title>Physics Formulae</title>
         <!-- Load external CSS styles -->
         <link rel="preconnect stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/73e14643a5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
         <link rel="icon" href="images/icon.ico">
     </head>
     <center><div class="bar">
@@ -17,8 +17,7 @@
     <body>
         <h1>Formula downloads</h1>
         <center>
-            <a class="download" href="physics1.zip" download><b>Download Latest</b> (V.3.0)</a>
-            <br>
+            <a class="download" href="Physics/download/v3.zip" download><i class="fas fa-download"></i> Download Latest(V.3.0)</a>
             <br>
             <SCRIPT>
                 function toggle() {
@@ -30,14 +29,13 @@
                     }
                 }
             </SCRIPT>
-            <button style="cursor: pointer;" onclick="toggle()">download older versions</button>
+            <button class="toggle" onclick="toggle()">download older versions</button>
             <div id="older">
-                <br>
                 <center>
-                    <ol aria-sort="descending" z-index="99999">
-                    <li onclick="document.location='index.html'">V.2.0</li>
-                    <li>V.1.1</li>
-                    <li>V.1.0</li> 
+                    <ol aria-sort="ascending" z-index="99999">
+                    <li><a class="old" href="Physics/download/v2.zip" download>V.2.0</a></li>
+                    <li><a class="old" href="Physics/download/v1.1.zip" download>V.1.1</a></li>
+                    <li><a class="old" href="Physics/download/v1.zip" download>V.1.0</a></li> 
                     </ol>  
                 </center>      
             </div>

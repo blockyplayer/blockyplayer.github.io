@@ -6,6 +6,12 @@
     padding: 10px;
     margin: 15px;
     letter-spacing: 2.5px;
+    cursor: pointer;
+}
+
+.download:active {
+    background-color: cornflowerblue;
+    color: silver;
 }
 
 div.bar {
@@ -60,6 +66,7 @@ div.bar {
     display: none;
     background-color: wheat;
     line-height: 33px;
+    width: 500px;
 }
 
 li {
@@ -70,4 +77,20 @@ li {
     border-bottom: 5px;
     border-bottom-style: double;
     border-bottom-color: darkgoldenrod;
+    width: 75px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.33);
+}
+
+.old {
+    text-decoration: none;
+    color: black;
+}
+
+.toggle {
+    opacity: 50%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-width: 0 0 3px 0;
+    margin-top: 10px;
 }
