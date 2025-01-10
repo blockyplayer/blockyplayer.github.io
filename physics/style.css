@@ -96,7 +96,7 @@ div.bar {
     margin-right: 25px;
     line-height: 15px;
     vertical-align: center;
-
+    border-radius: 12.5px;
 }
 
 .toggle {
@@ -115,4 +115,5 @@ a {
     word-spacing: 1px;
     line-height: 3px;
     font-family: "Be Vietnam Pro";
+    text-wrap-mode: wrap;
 }
