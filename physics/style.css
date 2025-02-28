@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap');
 
+
 body {
-    font-family: "Aldrich", serif;
-    background-color: white;
-    color: black;
+    font-family: "Lora";
+    background-color: #6A0C0B;
+    color: #fff5d4;
+    text-align: justify;
 }
 
-.dark-mode {
-    color: white !important;
-    background-color: black !important;
-}
 a.download {
-    background-color:cadetblue;
+    background-image: linear-gradient(cadetblue , rgb(134, 207, 210));
     color:white;
     border-radius: 7px;
     text-align: center;
@@ -25,8 +23,8 @@ a.download {
     size: 20px;
 }
 
-a.download:active {
-    background-color: cornflowerblue;
+a.download:hover {
+    background-image: linear-gradient(royalblue , rgb(79, 170, 255));
     color: silver;
 }
 
@@ -38,7 +36,8 @@ div.bar {
     display: block;
     text-align: center;
     scale: 150%;
-    background-color: rgba(211, 211, 211, 0.66);
+    background-color: #aa0505;
+    color: #fff5d4;
     align-self: center;
     align-content: center;
     align-tracks: center;
@@ -51,8 +50,9 @@ div.bar {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom-color: lightskyblue;
-    background-color: rgba(211, 211, 211, 0.477);
+    border-bottom-color: #eccf2e;
+    background-color: #AA0505;
+    color: #fff5d4;
     margin-left: -2px;
     margin-right: -2px;
 }
@@ -62,10 +62,11 @@ div.bar {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom-color: lightskyblue;
+    border-bottom-color: #eccf2e;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    background-color: rgba(211, 211, 211, 0.815);
+    background-color: #c80b0b;
+    color: #fff5d4;
     margin-left: 0;
     scale: 125%;
     margin: 0;
@@ -83,15 +84,17 @@ div.bar {
     background-color: wheat;
     line-height: 33px;
     width: 500px;
+    padding: 25px;
+    border: 30px;
+    border-radius: 10px;
+    border-color: #1aff00;
 }
 
 .old {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    border-color: darkgoldenrod;
-    list-style-type: disc;
-    list-style-position: inside;
+    list-style: none;
     border-bottom: 5px;
     border-bottom-style: double;
     border-bottom-color: darkgoldenrod;
@@ -107,11 +110,12 @@ div.bar {
 
 .toggle {
     opacity: 50%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-width: 0 0 5px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-width: 5px 0 0 0;
     margin-top: 15px;
     cursor: pointer;
+    border-color: burlywood;
 }
 
 a {
@@ -122,5 +126,23 @@ a {
     line-height: 3px;
     font-family: "Be Vietnam Pro";
     font-style: italic;
-    text-wrap-mode: wrap;
+    text-align: justify;
+    width: 426px;
+}
+
+.fa-download {
+    margin: 5px;
+    font-size: 17.5px;
+}
+
+b {
+    font-family: 'Aldrich', serif;
+    font-style: normal;
+    font-size: 17.5px;
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
 }
