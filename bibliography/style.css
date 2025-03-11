@@ -149,7 +149,12 @@ h1 {
 }
 
 li {
-    margin: 10px;
+    margin: 15px;
     cursor: pointer;
     color: #fff5d4;
+}
+
+a {
+    color: #fff5d4;
+    font-style: normal;
 }
