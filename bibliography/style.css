@@ -152,6 +152,7 @@ li {
     margin: 20px;
     cursor: pointer;
     color: #fff5d4;
+    background-color: rgba(222, 184, 135, 0.443);
 }
 
 a {
