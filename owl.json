@@ -1,0 +1,6 @@
+{
+    "Test": [
+        {"1": "This is the first message. Please encrypt me!"},
+        {"2": "Second message. The weather outside is *just wonderful*!"}
+    ],
+}
