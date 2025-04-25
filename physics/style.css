@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     font-family: "Lora";
@@ -21,6 +22,7 @@ a.download {
     padding: 15px;
     text-decoration: underline;
     size: 20px;
+    width: clamp(200px, 30vw, 300px); /* Added responsive width */
 }
 
 a.download:hover {
@@ -42,8 +44,15 @@ div.bar {
     align-content: center;
     align-tracks: center;
     align-items: center;
+    width: 100vw; /* Made full viewport width */
 }
 
+div:not(.bar) {
+    margin-right: clamp(50px, 8vw, 200px); /* More compact margins */
+    margin-left: clamp(50px, 8vw, 200px);   /* More compact margins */
+    align-items: center;
+    background-color: #9fc5e8;
+}
 .trav {
     cursor: pointer;
     display: inline-block;
@@ -55,6 +64,7 @@ div.bar {
     color: #fff5d4;
     margin-left: -2px;
     margin-right: -2px;
+    padding: 0.5rem 1.5vw; /* Responsive padding */
 }
 
 .used {
@@ -70,6 +80,7 @@ div.bar {
     margin-left: 0;
     scale: 125%;
     margin: 0;
+    padding: 0.5rem 1.5vw; /* Responsive padding */
 }
 
 .trav:hover {
@@ -83,7 +94,7 @@ div.bar {
     display: none;
     background-color: wheat;
     line-height: 33px;
-    width: 500px;
+    width: clamp(300px, 60vw, 600px); /* Responsive width */
     padding: 25px;
     border: 30px;
     border-radius: 10px;
@@ -102,7 +113,7 @@ div.bar {
     margin-top: 15px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.33);
-    margin-right: 37.5px;
+    margin-right: 3vw; /* Responsive margin */
     line-height: 15px;
     vertical-align: center;
     border-radius: 12.5px;
@@ -116,34 +127,82 @@ div.bar {
     margin-top: 15px;
     cursor: pointer;
     border-color: burlywood;
+    width: 10vw; /* Responsive width */
+    height: 4vw; /* Responsive height */
+    max-width: 100px;
+    max-height: 40px;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: clamp(14px, 1.5vw, 18px); /* Responsive font */
     word-spacing: 1px;
     line-height: 3px;
     font-family: "Be Vietnam Pro";
     font-style: italic;
     text-align: justify;
-    width: 426px;
+    width: clamp(300px, 50vw, 500px); /* Responsive width */
 }
 
 .fa-download {
     margin: 5px;
-    font-size: 17.5px;
+    font-size: clamp(16px, 2vw, 20px); /* Responsive icon */
 }
 
 b {
     font-family: 'Aldrich', serif;
     font-style: normal;
-    font-size: 17.5px;
+    font-size: clamp(16px, 2vw, 20px); /* Responsive font */
     font-weight: normal;
 }
 
 h1 {
     text-align: center;
     margin-top: 60px;
-    font-size: 50px;
+    font-size: clamp(30px, 6vw, 60px); /* Responsive heading */
+}
+#essay {
+    font-family: "Quicksand";
+    font-size: clamp(24px, 4vw, 40px); /* Responsive font */
+    text-align: right;
+    color: black;
+    background-color: #f48d39;
+    padding: clamp(30px, 6vw, 60px) clamp(20px, 4vw, 50px) 25px 20px;
+    width: initial;
+    margin-bottom: -30px;
+}
+
+div {
+    margin-right: clamp(100px, 15vw, 500px);
+    margin-left: clamp(100px, 15vw, 500px);
+    align-items: center;
+    background-color: #9fc5e8;
+}
+
+.rect {
+    background-color: #faa574ce;
+    margin-right: auto;
+    margin-left: auto;
+    width: clamp(400px, 60vw, 700px); /* Responsive width */
+    height: clamp(8px, 1vw, 12px); /* Responsive height */
+    display: block;
+    margin: -25px auto 30px auto;
+}
+
+p.rect {
+    background-color: #9fc5e8;
+    color: black;
+    font-family: "Tinas";
+    padding: 15px 15px;
+    display: inline;
+}
+
+img {
+    border: clamp(10px, 1.5vw, 20px) solid #f48d39; /* Responsive border */
+    margin-top: -10px;
+    float: left;
+    display: inline;
+    width: clamp(150px, 20vw, 250px); /* Responsive width */
+    height: auto;
 }
