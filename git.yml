@@ -9,5 +9,3 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
-      - uses: stefanzweifel/git-auto-commit-action@v5
-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 
