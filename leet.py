@@ -53,17 +53,14 @@ leet_dict = {
     'Z': '`/_'
 }
 
-def leet_translate():
-    inp = input('Enter string: ')
+def leet_translate(inp):
     # for word, leet in leet_dict.items():
     #     inp= inp.replace(word, leet)
     inp = inp.translate(str.maketrans(leet_dict))
     return inp
-def string_translate():
+def string_translate(inp):
     inp = input('Enter leet: ')
     for k,v in leet_dict.items():
         inp = inp.replace(v, k)
     return inp
-print(leet_translate())
-print(string_translate())
 
