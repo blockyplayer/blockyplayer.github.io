@@ -5,3 +5,9 @@
 .used {
     cursor: progress;
 }
+
+.search-box {
+    align-items: left;
+    margin-left: 25%;
+    width: 150px;
+}
