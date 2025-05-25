@@ -1,1 +1,0 @@
-This folder is outdated. Visit https://blockyplayer.github.io/physics/download for newest versions.
