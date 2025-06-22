@@ -1,7 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Tinos';
+    background-color: #b40000;
+    color: white;
+    height: 100%;
+    overflow-y: hidden;
+}
+
 h1 {
-    font-size: 700px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vmax;
     text-align: center;
     font-style: italic;
     color: #ebd3a3;
-    background: linear-gradient(to right, #1524ff, #b1b5f3);
+}
+
+iframe {
+    scrollbar-color: #ffffff00;
+}
+
+div.search {
+    margin: -3vmax 2vmax 0 2vmax;
+    width: 50vmax;
+    border: 3px solid green;
+    background-color: black;
+}
+
+input [type=text] {
+    background-color: black;
+    color: white;
+    margin-left: -20px;
+}
+
+iframe {
+    width: 50vmax;
+    height: 75vmin;
+}
+
+input[type=submit] {
+    border-radius: 35px;
+    padding: 9px;
+    margin-left: 10px;
+}
+
+#q_win {
+    border: none;
 }

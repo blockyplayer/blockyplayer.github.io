@@ -1,3 +1,49 @@
-<h1>Knoxi</h1>
-<div class="search">Search Bar</div>
-<iframe src="https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost">News Section, by Wikipedia Signpost</iframe>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internet Search on Knoxi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h1>Knoxi</h1>
+                <form id="urlForm" onsubmit="navigateToUrl(event)">
+        <input 
+            type="text" 
+            id="urlInput" 
+            placeholder="Enter URL or search terms"
+            required
+        >
+        <button type="submit">Go to URL</button>
+    </form>
+    <iframe id="q_win" src="about:blank"></iframe>
+    <script>
+        function navigateToUrl(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            // Get the input value
+            const url = document.getElementById('urlInput').value.trim();
+            
+            // Format as JS template literal (f-string equivalent)
+            const formattedUrl = `${url}`;
+            
+            // Ensure the URL has a protocol (default to https if missing)
+            let finalUrl = formattedUrl;
+            if (!/^https?:\/\//i.test(finalUrl)) {
+                finalUrl = `https://duckduckgo.com/?t=ffab&q${finalUrl}`;
+            }
+            
+            // Navigate directly to the URL in the same tab
+            // window.location.href = finalUrl;
+            // document.getElementById("q_win").src = finalURL;
+
+            const finalURL = finalURL;
+            document.getElementById("q_win").src = finalURL; 
+        }
+        
+    </script>
+    <iframe id="q_win" src="Javascript:finalURL"></iframe>
+        </center>
+    
+    </body>
+</html>
