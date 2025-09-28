@@ -1,8 +1,0 @@
-from casio import calc
-
-num = ""
-arith = ""
-num2 = ""
-user = "."
-while user != "":
-    calc(num, arith, num2)
