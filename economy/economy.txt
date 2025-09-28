@@ -1,0 +1,3 @@
+gdp = 50
+avg_cost = 10
+supply = 150
