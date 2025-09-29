@@ -1,7 +1,7 @@
 import random
 
 def rand(seed):
-    seed =
+    seed = random.randint(-999999999, 999999999)
 string = ""
 def encrypt(string):
     string = input("Enter string: ")
