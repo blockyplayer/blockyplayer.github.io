@@ -5,6 +5,7 @@ from Crypto.Cipher import AES
 
 class AESCipher(object):
 
+
     def __init__(self, key):
         self.bs = AES.block_size
         self.key = hashlib.sha256(key.encode()).digest()
@@ -27,3 +28,5 @@ class AESCipher(object):
     @staticmethod
     def _unpad(s):
         return s[:-ord(s[len(s)-1:])]
+
+print(AESCipher.encrypt('Hello'))
