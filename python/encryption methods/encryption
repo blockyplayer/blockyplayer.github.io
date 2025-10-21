@@ -1,0 +1,49 @@
+# import random
+
+# def rand():
+#     global seed
+#     seed = random.randint(0, 999999999)
+#     return seed
+# print(rand())
+# x = 0
+# string = ""
+# def encrypt(string, seed):
+#     string = input("Enter string: ")
+#     for i in string:
+#         ordstr = ord(string[x])
+#         new = ordstr + seed
+#     print(str(chr(new)))
+
+
+
+# encrypt(string, seed)
+key = "jellybean"
+message = "Tell me and I forget. Teach me and I remember. Involve me and I learn."
+
+plaintext = message.lower()
+
+def rotate(letter, key):
+  if letter.islower():
+    shift = ord(key) - ord('a')
+    print(shift)
+    new = ord('a') + (ord(letter) - ord('a') + shift) % 26
+    print(new)
+    new = chr(new)
+  else:
+    new = letter
+  return new
+
+def encrypt():
+    counter = 0
+    for i in range(len(plaintext)):
+        letter = plaintext[i]
+    if letter.islower():
+        subkey = key[counter % len(key)]
+        encrypted = encrypted + rotate(letter, subkey)
+        counter += 1
+    else:
+        encrypted = encrypted + letter
+
+print(plaintext)
+print("Encrypted with '" + key + "':")
+print() 

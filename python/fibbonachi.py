@@ -1,7 +1,7 @@
 import time
 import os
 import sys
-path = os.path.expanduser('/Users/nassemnabil/Library/CloudStorage/OneDrive-NSWDepartmentofEducation/AWORKUSB/IST Legacy/joke python/')
+path = os.path.expanduser('/Volumes/WORK/Epiccombat Site/blockyplayer.github.io/python/')
 x = 0
 fib = [0, 1, 1]
 # while x < 999999:

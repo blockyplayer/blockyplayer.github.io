@@ -6,6 +6,7 @@ pygame.init()
 warning = pygame.mixer.Sound('507502__elanhickler__argi_scifi_alarm_tracking_05.wav')
 tick = pygame.mixer.Sound('57211__mab__mab-clock-tick-1-20080713.wav')
 stopwatch = ""
+
 def clock(stopwatch):
     stopwatch = input("Duration (with units after): ")
     stopwatch = stopwatch.lower()
