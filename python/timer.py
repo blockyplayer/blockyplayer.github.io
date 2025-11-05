@@ -10,8 +10,6 @@ stopwatch = ""
 def clock(stopwatch):
     stopwatch = input("Duration (with units after): ")
     stopwatch = stopwatch.lower()
-    vector = input("Count up or down? ")
-    vector = vector.lower()
     if stopwatch != "":
         user = stopwatch.split()
         unit = user[1]
@@ -25,21 +23,13 @@ def clock(stopwatch):
             rest = 3600
         else:
             rest = 1
-
-        if "up" in vector:
-            for durations in range(duration):
-                print(durations)
-                tick.play()
-                time.sleep(rest)
-                durations = duration - 1
-        elif "down" in vector:
-            for durations in range(duration):
-                print(duration)
-                tick.play()
-                time.sleep(rest)
-                duration = duration - 1
+        for durations in range(duration):
+            tick.play()
+            print(f'\r {duration} ', end="\r")
+            time.sleep(rest)
+            duration = duration - 1
         print("**TIMER UP**")
-        warning.play(20)
+        warning.play(10,0,2)
 
     else:
         print("**!AN UNEXPECTED ERROR OCCURED!**")
