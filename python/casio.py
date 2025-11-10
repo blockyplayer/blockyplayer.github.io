@@ -12,7 +12,7 @@ def calc(num, arith, num2):
         userl = user.split()
         arithl = ['+', '-', '*', '/', '^', 'v', 'sci']
 
-        if userl[0] == "v":
+        if userl[0] in ["v", "√"]:
             num = float(userl[-1])
             arith = userl[0]
             num2 = float(userl[-1])
