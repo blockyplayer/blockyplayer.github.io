@@ -8,8 +8,7 @@ Words that are not in the datamuse dataset will be saved without any changes, to
 encrypt the final output.
 
 Alternatively, each letter can be assigned a value, and then that value can be mathematically manipulated 
-(+,-,/,*,
-**) to result in a smaller number.
+(+,-,/,*,**) to result in a smaller number.
 
 The phrases can be used to train an Afry.
 
