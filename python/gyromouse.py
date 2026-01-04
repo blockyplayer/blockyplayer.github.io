@@ -4,7 +4,7 @@ import time
 
 1648, 343
 pix_per_scroll = 16
-
+t
 n_scroll = int(input('How many scrolls? (best effect on long pages): '))
 gui.moveTo(1464, 160)
 gui.leftClick()
