@@ -1,10 +1,12 @@
 import time
 import os
 import sys
+from itertools import (takewhile, repeat)
 
 path = os.path.expanduser('/Users/nassemnabil/Mac Storage/Epiccombat Site/blockyplayer.github.io/python/')
 x = 0
-fib = ['0', '1', '1']
+fib = [0, 1, 1]
+end = 0
 def fibgen():
     open(f'{path}/Fibonacci.txt', 'w').close()
     with open(f'{path}Fibonacci.txt', 'a') as f:
@@ -27,25 +29,27 @@ IMPORTANT, DEFINE FUNC TO SAVE LAST DIGITS OF SEQUENCE FROM FILE, DEFINE AS GLOB
 
 '''
 It appears that reading the end of a file is quite multi-faceted and can be approached by a number of methods, of varying efficiency.
-The following is solved here: https://stackoverflow.com/questions/845058/how-to-get-the-line-count-of-a-large-file-cheaply-in-python/27518377?r=Saves_UserSavesList#27518377
+Pasted is a solution from here: https://stackoverflow.com/questions/845058/how-to-get-the-line-count-of-a-large-file-cheaply-in-python/27518377?r=Saves_UserSavesList#27518377
 '''
 # Source - https://stackoverflow.com/a/27518377
 # Posted by Michael Bacon, modified by community. See post 'Timeline' for change history
 # Retrieved 2026-01-03, License - CC BY-SA 4.0
 
-from itertools import (takewhile, repeat)
-
 def rawincount(filename):
     f = open(filename, 'rb')
     bufgen = takewhile(lambda x: x, (f.raw.read(1024*1024) for _ in repeat(None)))
     return sum(buf.count(b'\n') for buf in bufgen)
+print('Rawincount: ', rawincount(f'{path}Fibonacci.txt'))
 
 def fibgen_append():
-    with open(f'{path}Fibonacci.txt', 'r') as f:
-        lines = [int(f.readlines()[(rawincount('Fibonacci.txt'))-1]), int(f.readlines()[(rawincount('Fibonacci.txt'))-2])]
-    fib.append(lines)
-    return(lines, fib)
-fibgen_append()
+    flen = 0
+    with open(f'{path}Fibonacci.txt', 'a') as f:
+        for line in f:
+            flen += 1
+            fib.append(int(line.strip().split))
+        f.write(f'{fib[-1]}\n\n{fib[-2]}')
+        return f'{fib[-1]}\n\n{fib[-2]}'
+print(fibgen_append())
 # while __name__ == '__main__':
 #     inp = input('Continue from last?(y/n) ')
 #     end = input('Fibonacci last index: ')

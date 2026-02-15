@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-color: #005100;
+    color: pink;
+    font-family: "Cascadia Code", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 {
+    margin-top: 5%;
+    font-family: "Playfair Display", serif;
+    font-weight: 625;
+    text-align: center;
+    border-top-color: palevioletred;
+    border-bottom-color: palevioletred;
+    border-width: 2px;
+    font-size: 3em;
+}
+p {
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 16px;
+
+}
+
+div.container {
+    margin: 7%;
+    text-align: justify;
+    align-content: center;
+    align-items: center;
+    background-color: darkgreen;
+    padding: 5%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+div.emphasis {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 19px;
+    display: inline;
+}
